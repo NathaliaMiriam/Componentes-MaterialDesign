@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.nm.componentes_materialdesign.databinding.ActivityMainBinding
 
-
 class MainActivity : AppCompatActivity() {
 
     // função lâmbida que busca o meu layout 'activity_main' e infla
@@ -14,14 +13,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         setContentView(binding.root)
-        setSupportActionBar(binding.toolbar)
+        setSupportActionBar(binding.toolbar) // configura a Toolbar
+
+        supportActionBar?.title = "Componentes - Material Design" // define o título na Toolbar
 
         insertListeners()
     }
 
     private fun insertListeners() {
         binding.cvButtons.setOnClickListener {
-            startActivity(ButtonsActivity.createIntent(context))
+            startActivity(ButtonsActivity.createIntent(this))
         }
     }
 }
