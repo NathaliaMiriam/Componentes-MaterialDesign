@@ -23,11 +23,15 @@ class MainActivity : AppCompatActivity() {
     // função dos cliques dos botões
     private fun insertListeners() {
         binding.cvButtons.setOnClickListener {
-            startActivity(ButtonsActivity.createIntent(this))
+            startActivity(ButtonsActivity.createIntent(this)) // activity
         }
 
         binding.cvTextFields.setOnClickListener {
-            startActivity(TextFieldsActivity.createIntent(this))
+            startActivity(TextFieldsActivity.createIntent(this)) // activity
+        }
+
+        binding.cvBottomSheets.setOnClickListener {
+            ModalBottomSheet.start(supportFragmentManager) // fragment
         }
     }
 }
