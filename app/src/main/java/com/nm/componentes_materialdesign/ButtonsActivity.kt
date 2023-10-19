@@ -18,6 +18,7 @@ class ButtonsActivity : AppCompatActivity() {
         setContentView(binding.root)
     }
 
+    // cria a intenção
     companion object {
         fun createIntent(context: Context): Intent = Intent(context, ButtonsActivity::class.java)
 

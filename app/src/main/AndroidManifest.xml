@@ -21,6 +21,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.nm.componentes_materialdesign.ButtonsActivity" />
+        <activity android:name="com.nm.componentes_materialdesign.TextFieldsActivity" />
     </application>
 
 </manifest>
