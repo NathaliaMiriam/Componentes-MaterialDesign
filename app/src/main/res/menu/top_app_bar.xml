@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+
+    <!-- 'tools:ignore="HardcodedText' ignora o padrão de Internacionalização, visto que, o correto é
+    salvar todas as strings no arq. de strings: Alt + Enter sob o 'text' e selecionar a opção que ignora -->
+
+    <item
+        android:id="@+id/favorite"
+        android:contentDescription=""
+        android:icon="@drawable/ic_favorite"
+        android:title="Favorite"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/search"
+        android:contentDescription=""
+        android:icon="@drawable/ic_search"
+        android:title="Search"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/more"
+        android:contentDescription=""
+        android:icon="@drawable/ic_more_vert"
+        android:title="More"
+        app:showAsAction="never" />
+
+</menu>
